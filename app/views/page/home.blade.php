@@ -35,6 +35,16 @@ Laravel Boilerplate.
             <h3>Location?</h3>
             <button type="button" class="btn btn-default btn-cons">Find</button>
         </div>
+        <div class="col-lg-8 col-lg-offset-2 w">
+            <h3>When?</h3>
+            <button type="button" class="btn btn-default btn-cons">Monday</button>
+            <button type="button" class="btn btn-default btn-cons">Tuesday</button>
+            <button type="button" class="btn btn-default btn-cons">Wednesday</button>
+            <button type="button" class="btn btn-default btn-cons">Thursday</button>
+            <button type="button" class="btn btn-default btn-cons">Friday</button>
+            <button type="button" class="btn btn-default btn-cons">Saturday</button>
+            <button type="button" class="btn btn-default btn-cons">Sunday</button>
+        </div>
 
         <div class="col-lg-8 col-lg-offset-2 w">
             <h3>Results</h3>

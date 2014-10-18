@@ -36,6 +36,13 @@ Profile</h4>
     			{{ ($errors->has('lastName') ?  $errors->first('lastName') : '') }}
     		</div>
     	</div>
+        <div class="control-group" for="lastName">
+            <label class="control-label" for="lastName">Last Name</label>
+            <div class="controls">
+                <input name="lastName" value="{{ (Request::old('lastName')) ? Request::old("lastName") : $user->last_name }}" type="text" class="input-xlarge" placeholder="Last Name">
+                {{ ($errors->has('lastName') ?  $errors->first('lastName') : '') }}
+            </div>
+        </div>
 
     	<div class="form-actions">
 	    	<input class="btn-primary btn" type="submit" value="Submit Changes"> 
@@ -80,35 +87,6 @@ Profile</h4>
       </form>
   </div>
 
-@if (Sentry::check() && Sentry::getUser()->hasAccess('admin'))
-<h4>User Group Memberships</h4>
-<div class="well">
-    <form class="form-horizontal" action="{{ URL::to('users/updatememberships') }}/{{ $user->id }}" method="post">
-        {{ Form::token() }}
 
-        <table class="table">
-            <thead>
-                <th>Group</th>
-                <th>Membership Status</th>
-            </thead>
-            <tbody>
-                @foreach ($allGroups as $group)
-                    <tr>
-                        <td>{{ $group->name }}</td>
-                        <td>
-                            <div class="switch" data-on-label="In" data-on='info' data-off-label="Out">
-                                <input name="permissions[{{ $group->id }}]" type="checkbox" {{ ( $user->inGroup($group)) ? 'checked' : '' }} >
-                            </div>
-                        </td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-        <div class="form-actions">
-            <input class="btn-primary btn" type="submit" value="Update Memberships">
-        </div> 
-    </form>
-</div>
-@endif    
 
 @stop
