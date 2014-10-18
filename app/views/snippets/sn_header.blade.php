@@ -8,7 +8,7 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a href="{{ URL::to('/') }}" class="navbar-brand">Boilerplate</a>
+	    <a href="{{ URL::to('/') }}" class="navbar-brand">Sportl</a>
 	  </div>
 	  <!-- Collect the nav links, forms, and other content for toggling -->
 	  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

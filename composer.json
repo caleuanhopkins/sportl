@@ -3,7 +3,8 @@
     "description": "Laravel 4 starter app.",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"cartalyst/sentry": "2.0.*"
+		"cartalyst/sentry": "2.0.*",
+		"shift31/laravel-elasticsearch": "1.0.*@dev"
 	},
 	"require-dev": {
 		"codeception/codeception": "*",

@@ -11,7 +11,7 @@ Laravel Boilerplate.
 
     <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2 w">
-            <h1>Laravel Boilerplate.</h1>
+            <h1>Sportl</h1>
         </div>
     </div>   
     
