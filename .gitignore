@@ -1,0 +1,12 @@
+#Ignore:
+
+/bootstrap/compiled.php
+/vendor/*
+/node_modules/*
+composer.phar
+composer.lock
+/app/config/sendGridConfig.php
+/app/config/defaultMailConfig.php
+
+*.DS_Store
+*.sass-cache
