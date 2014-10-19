@@ -40,8 +40,8 @@ Route::group(array('prefix' => 'v1', 'before' => 'api.auth|api.limit'), function
 |-----------------------------------------------------------------------
 */
 
-Route::get('/random', function()
+Route::get('/opportunities', function()
 {
-	$random = date('Yms') . rand(10*45, 19*98);
-	return $random;
+	 
+	return File::get('../public/assets/json/opportunities.json');
 });

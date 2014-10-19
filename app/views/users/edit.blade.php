@@ -36,13 +36,7 @@ Profile</h4>
     			{{ ($errors->has('lastName') ?  $errors->first('lastName') : '') }}
     		</div>
     	</div>
-        <div class="control-group" for="lastName">
-            <label class="control-label" for="lastName">Last Name</label>
-            <div class="controls">
-                <input name="lastName" value="{{ (Request::old('lastName')) ? Request::old("lastName") : $user->last_name }}" type="text" class="input-xlarge" placeholder="Last Name">
-                {{ ($errors->has('lastName') ?  $errors->first('lastName') : '') }}
-            </div>
-        </div>
+
 
     	<div class="form-actions">
 	    	<input class="btn-primary btn" type="submit" value="Submit Changes"> 
